@@ -1,7 +1,12 @@
 import axios from "axios";
 import { Request, RemoveUsersFromSpaceResult, RemoveUsersFromSpaceParams, IOperation, NishanArg, SetPageNotificationsAsReadParams, SetSpaceNotificationsAsReadParams, CreateSpaceParams, CreateSpaceResult, EnqueueTaskResult, InviteGuestsToSpaceParams, RecordMap, SetBookmarkMetadataParams, TEnqueueTaskParams } from "../types";
-import { createTransaction, error } from "../utils";
+import { createTransaction } from "../utils";
 import Queries from "./Queries";
+
+// TODO: remove
+const error = (msg: string) => {
+  return msg;
+};
 
 export default class Mutations extends Queries {
   protected space_id: string;

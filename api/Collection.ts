@@ -1,12 +1,18 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import { error, Operation } from '../utils';
+import { Operation } from '../utils';
 
 import Data from "./Data";
 import SchemaUnit from "./SchemaUnit";
 
 import { ICollection, IPageInput, UpdatableCollectionUpdateParam, NishanArg, IOperation, RepositionParams, IPage, FilterTypes, TSchemaUnit, FilterType, TSchemaUnitType, MSchemaUnit, } from "../types";
 import Page from './Page';
+
+// TODO: remove
+const error = (msg: string) => {
+  return msg;
+};
+
 
 /**
  * A class to represent collection of Notion

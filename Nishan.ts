@@ -2,9 +2,18 @@ import axios from "axios";
 import colors from "colors";
 
 import NotionUser from "./api/NotionUser";
-import { error } from "./utils/logs";
 import Cache from "./api/Cache";
 import { Logger, NishanArg, GetSpacesResult, INotionUser, FilterType, FilterTypes } from "./types";
+
+export const error = (msg: string) => {
+  console.log(colors.red.bold(msg));
+  return msg;
+};
+export const warn = (msg: string) => {
+  console.log(colors.yellow.bold(msg));
+  return msg;
+};
+
 
 class Nishan extends Cache {
   token: string;

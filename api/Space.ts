@@ -1,12 +1,17 @@
 import Data from './Data';
 import SpaceView from "./SpaceView";
 
-import { Operation, error } from '../utils';
+import { Operation } from '../utils';
 
 import { ICollectionViewPageInput, UpdatableSpaceParams, IPageInput, ISpace, ISpaceView, NishanArg, IOperation, FilterTypes, FilterType, ICollection, RepositionParams, ICollectionViewPage, IPage, ITPage, TPage } from '../types';
 import Collection from './Collection';
 import CollectionViewPage from './CollectionViewPage';
 import Page from './Page';
+
+// TODO: remove
+const error = (msg: string) => {
+  return msg;
+};
 
 /**
  * A class to represent space of Notion

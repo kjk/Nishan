@@ -1,6 +1,10 @@
 import Data from "./Data";
 import { TView, NishanArg, ViewFormatProperties, ViewSorts, Predicate, IViewFilters, TViewAggregationsAggregators, TViewFiltersOperator, IViewFilter, TViewFiltersType } from "../types";
-import { warn } from "../utils";
+
+// TODO: remove
+const warn = (msg: string) => {
+  return msg;
+};
 
 /**
  * A class to represent a column schema of a collection and a view

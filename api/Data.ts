@@ -1,7 +1,12 @@
 import { v4 as uuidv4 } from 'uuid';
 import { Schema, NishanArg, TDataType, TData, IOperation, Args, RepositionParams, TBlock, TParentType, ICollection, ISpace, ISpaceView, IUserRoot, UpdateCacheManuallyParam, FilterTypes, TViewFilters, ViewAggregations, ViewFormatProperties, ViewSorts, ISchemaUnit, ICollectionBlockInput, TSearchManipViewParam, TableSearchManipViewParam, ITableViewFormat, BoardSearchManipViewParam, IBoardViewFormat, GallerySearchManipViewParam, IGalleryViewFormat, CalendarSearchManipViewParam, ICalendarViewQuery2, ITimelineViewFormat, TimelineSearchManipViewParam, TViewType, ITBlock, ITView, ITSchemaUnit, TOperationTable, CreateBlockArg, IDriveInput, ITCollectionBlock, PageCreateContentParam, RecordMap, TGenericEmbedBlockType, WebBookmarkProps, SetBookmarkMetadataParams, ICollectionView, TBlockType, TView } from "../types";
-import { Operation, error } from "../utils";
+import { Operation } from "../utils";
 import Mutations from "./Mutations";
+
+// TODO: remove
+const error = (msg: string) => {
+  return msg;
+};
 
 /**
  * A class to update and control data specific stuffs

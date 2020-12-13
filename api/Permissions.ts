@@ -1,6 +1,11 @@
 import { INotionUser, TPermissionRole, ICollectionViewPage, IPage, NishanArg, IPermission, IOperation, IPublicPermissionOptions, TPublicPermissionRole, IPublicPermission, TSpacePermissionRole } from "../types"
-import { error, Operation } from "../utils";
+import { Operation } from "../utils";
 import Block from "./Block";
+
+// TODO: remove
+const error = (msg: string) => {
+  return msg;
+};
 
 export default class Permissions<T extends (ICollectionViewPage | IPage)> extends Block<T, any>{
   constructor(arg: NishanArg) {

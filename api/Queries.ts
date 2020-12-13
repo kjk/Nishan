@@ -3,8 +3,12 @@ import colors from "colors";
 
 import Cache from "./Cache";
 
-import { error } from "../utils";
 import { UpdateCacheManuallyParam, TDataType, FindUserResult, GetBackLinksForBlockResult, GetGenericEmbedBlockDataParams, GetGenericEmbedBlockDataResult, GetGoogleDriveAccountsResult, GetPublicPageDataParams, GetPublicPageDataResult, GetPublicSpaceDataParams, GetPublicSpaceDataResult, GetSpacesResult, GetSubscriptionDataParams, GetSubscriptionDataResult, GetUploadFileUrlParams, GetUploadFileUrlResult, InitializeGoogleDriveBlockParams, InitializeGoogleDriveBlockResult, InitializePageTemplateParams, InitializePageTemplateResult, INotionUser, LoadBlockSubtreeParams, LoadBlockSubtreeResult, LoadPageChunkParams, LoadPageChunkResult, LoadUserContentResult, QueryCollectionParams, QueryCollectionResult, RecordMap, SyncRecordValuesParams, SyncRecordValuesResult, GetUserTasksResult, GetUserSharedPagesResult, GetUserSharedPagesParams, GetPageVisitsParams, GetPageVisitsResult, Logger, NishanArg } from "../types";
+
+// TODO: remove
+const error = (msg: string) => {
+  return msg;
+};
 
 /**
  * A class containing all the api endpoints of Notion
