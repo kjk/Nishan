@@ -19,12 +19,11 @@
     "experimentalDecorators": true
   },
   "include": [
-    "./Nishan.ts",
-    "workflows",
-    "experiment"
+    "./Nishan.ts"
   ],
   "exclude": [
     "./node_modules",
+    "workflows",
     "docs",
   ],
   "typedocOptions": {
