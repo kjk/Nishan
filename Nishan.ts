@@ -1,5 +1,4 @@
 import axios from "axios";
-import colors from "colors";
 
 // uuidv4
 
@@ -1357,11 +1356,11 @@ export interface ICredit {
 }
 
 export const error = (msg: string) => {
-    console.log(colors.red.bold(msg));
+    console.log(msg);
     return msg;
 };
 export const warn = (msg: string) => {
-    console.log(colors.yellow.bold(msg));
+    console.log(msg);
     return msg;
 };
 
@@ -2272,7 +2271,7 @@ export class Queries extends Cache {
         };
         this.user_id = user_id;
         this.logger = function (method, subject, id) {
-            console.log(`${colors.red(method)} ${colors.green(subject)}:${colors.blue(id)}`);
+            console.log(`${method} ${subject}:${id}`);
         } || logger;
     }
 
@@ -5948,7 +5947,7 @@ class Nishan extends Cache {
         this.interval = arg.interval || 500;
         this.init_cache = false;
         this.logger = arg.logger === undefined ? function (method, subject, id) {
-            console.log(`${colors.red(method)} ${colors.green(subject)}:${colors.blue(id)}`);
+            console.log(`${method} ${subject}:${id}`);
         } : arg.logger;
     }
 

@@ -4,8 +4,7 @@
   "description": "Unofficial Notion Api wrapper for Node.js",
   "main": "./dist/Nishan",
   "dependencies": {
-    "axios": "^0.20.0",
-    "colors": "^1.4.0"
+    "axios": "^0.20.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
