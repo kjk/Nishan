@@ -4,7 +4,7 @@
       "ESNext",
       "dom",
     ],
-    "module": "commonjS",
+    "module": "es2015",
     "target": "es2019",
     "strict": true,
     "esModuleInterop": true,
@@ -16,6 +16,7 @@
     "sourceMap": false,
     "noUnusedLocals": true,
     "incremental": false,
+    "moduleResolution": "node",
     "experimentalDecorators": true
   },
   "include": [
